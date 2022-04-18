@@ -1,0 +1,13 @@
+function setTheme(themeBase)
+    themes = {
+        titleFG = colors.white, titleBG = colors.cyan,
+        passFG = colors.green, passBG = colors.black,
+        failFG = colors.red, failBG = colors.black,
+        passSFG = colors.green, passSBG = colors.green,
+        failSFG = colors.red, failSBG = colors.red,
+        authFG = colors.orange, authBG = colors.black,
+    }
+    term.setBackgroundColor(themes[themeBase.."BG"])
+    term.setTextColor(themes[themeBase.."FG"])
+    end
+    
